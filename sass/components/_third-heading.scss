@@ -1,0 +1,14 @@
+.third-heading {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+      .third-heading {
+            text-align: left;
+      }
+}

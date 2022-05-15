@@ -1,0 +1,116 @@
+.page-header {
+      padding: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--menu-border-color);
+
+      &__list {
+            display: none;
+      }
+
+      &__logo {
+            color: var(--black-color);
+      }
+}
+
+.page-header__burger-icon {
+      width: 24px;
+      height: 16px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+            fill: var(--decorative-color);
+            cursor: pointer;
+      }
+}
+
+@media screen and (min-width: 768px) {
+      .page-header { 
+            padding-top: 21px;
+            padding-bottom: 21px;
+
+            &__burger-icon {
+            display: none;
+            }
+
+            &__list {
+                display: block;  
+            }
+
+            &__item:not(:last-child) {
+                  margin-bottom: 10px;
+            }
+
+            &__mail-icon {
+                  margin-right: 8px;
+                  width: 14px;
+                  height: 10px;
+            }
+
+            &__phone-icon {
+                  margin-right: 8px;
+                  width: 10px;
+                  height: 14px;
+            }
+      }
+
+      .page-header__contact {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.167;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: var(--second-color);
+            fill: var(--second-color);
+            transition-property: color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                  color: var(--decorative-color);
+                  fill: var(--decorative-color);
+            }
+      }
+}
+
+@media screen and (min-width: 1200px) {
+      .page-header {
+            padding-top: 24px;
+            padding-bottom: 24px;
+
+            &__list {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            }
+
+            &__item:not(:last-child) {
+                  margin: 0;
+                  margin-right: 30px;
+            }
+
+            &__mail-icon {
+                  margin-right: 10px;
+                  width: 16px;
+                  height: 12px;
+            }
+      
+            &__phone-icon {
+                  margin-right: 10px;
+                  width: 10px;
+                  height: 16px;
+            }
+
+      }
+
+      .page-header__contact {
+            font-size: 14px;
+            line-height: 1.143;
+      }
+}
